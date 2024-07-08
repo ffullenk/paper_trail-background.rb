@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.description = spec.summary
   spec.homepage = "https://github.com/krainboltgreene/paper_trail-background.rb"
   spec.license = "HL3"
-  spec.required_ruby_version = "~> 3.2"
+  spec.required_ruby_version = "~> 3.1"
 
   spec.files = Dir[File.join("lib", "**", "*"), "LICENSE", "README.md", "Rakefile"]
   spec.require_paths = ["lib"]
