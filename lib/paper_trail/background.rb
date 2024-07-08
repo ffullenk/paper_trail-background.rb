@@ -85,7 +85,7 @@ module PaperTrail
 
     private def trigger_write(record, data, event)
       record.class.after_transaction do
-        VersionJob.perform_later(
+        VersionWorker.perform_later(
           record.class.paper_trail.version_class.name,
           data,
           event
